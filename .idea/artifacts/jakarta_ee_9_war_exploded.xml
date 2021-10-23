@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jakarta-ee-9:war exploded">
+    <output-path>$PROJECT_DIR$/target/jakarta-ee-tutorial</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>jakarta-ee-9</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jakarta-ee-9" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.22" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.29" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/jakarta-ee-tutorial/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="jakarta-ee-9/web/Web" />
+    </root>
+  </artifact>
+</component>
